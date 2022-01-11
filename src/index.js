@@ -1,14 +1,65 @@
-import _ from 'lodash';
 import './style.css';
 
-function component() {
-  const element = document.createElement('div');
+const listData = [
+  {
+    description: 'Budget Planning',
+    completed: false,
+    index: 0,
+  },
+  {
+    description: 'Barber Shop',
+    completed: false,
+    index: 1,
+  },
+  {
+    description: 'Project Submission',
+    completed: false,
+    index: 2,
+  },
+  {
+    description: 'Counting Valleys',
+    completed: false,
+    index: 2,
+  },
+  {
+    description: 'Stand-Up Session',
+    completed: false,
+    index: 2,
+  },
+  {
+    description: 'Pair - Programming',
+    completed: false,
+    index: 2,
+  },
+];
 
-  // Lodash, now imported by this script
-  element.innerHTML = _.join([], ' ');
-  element.classList.add('hello');
+let listMarkUp = `
+        <div class="row title">
+            <p>Today's To Do</p>
+            <i class="fas fa-sync"></i>
+        </div>
+        <div class="row">
+            <input class="add-input" type="text" placeholder="Add to your list">
+            <i class="fas fa-level-down-alt rotate"></i>
+        </div>
+`;
 
-  return element;
-}
+listData.forEach((listItem) => {
+  listMarkUp += `
+        <div class="row">
+            <input type="checkbox">
+            <p>${listItem.description}</p>
+            <i class="fas fa-ellipsis-v"></i>
+        </div>
+        
+  `;
+});
 
-document.body.appendChild(component());
+listMarkUp += `
+        <div class="row clear">
+            <p>Clear All Completed</p>
+        </div>
+`;
+
+const listElement = document.querySelector('.list');
+listElement.innerHTML = listMarkUp;
