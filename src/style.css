@@ -36,6 +36,7 @@
   border: none;
   width: 85%;
   height: 50px;
+  font-style: italic;
 }
 
 input[type='checkbox'] {
