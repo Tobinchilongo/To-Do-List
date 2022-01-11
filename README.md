@@ -1,6 +1,6 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# Webpack Templte
+# To-Do-List
 
 Additional description about the project and its features.
 
@@ -15,10 +15,11 @@ npm start
 
 ## Authors
 
-👤 **Author1**
+👤 **Tobin Chilongo Jnr**
 
-- GitHub: [@ahmedta](https://github.com/ahmedta)
-- Twitter: [@\_ahmedta](https://twitter.com/_ahmedta)
+- GitHub: [@Tobinchilongo](https://github.com/Tobinchilongo)
+- Twitter: [@Tobin_Official](https://twitter.com/Tobin_Official)
+- LinkedIn: [@TobinChilongo](https://www.linkedin.com/in/tobin-chilongo)
 
 ## 🤝 Contributing
 
