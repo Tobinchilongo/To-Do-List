@@ -1,0 +1,6 @@
+npm install 
+touch style.css, index.js,index.html
+//index.js
+import './style.css'
+npm run build
+npm start
