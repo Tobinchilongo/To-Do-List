@@ -1,17 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://kit.fontawesome.com/fe6dec7cca.js" crossorigin="anonymous"></script>
-    <title>To-Do-List</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet" crossorigin="anonymous">
+    <title>Tobin's Todo List</title>
 </head>
-
 <body>
-    <div class="list">
-
+  <section class="container">
+    <div class="header d-flex">
+      <h1>Today's ToDo-List</h1>
+      <i class="fa fa-refresh"></i>
     </div>
+    <form id="form" class="d-flex">
+      <input type="text" id="input" name="new_task" placeholder="Add to your list...">
+      <button class="fa fa-level-down fa-rotate-90" type="submit" title="submit"></button>
+    </form>
+    <div class="task-container">
+      <ul class="task-list">
+      </ul>
+    </div>
+    <span id="clear-completed"> Clear all Completed</span>
+  </div>
 </body>
-
+<script src="https://use.fontawesome.com/60c3c5e662.js" crossorigin="anonymous"></script>
 </html>
