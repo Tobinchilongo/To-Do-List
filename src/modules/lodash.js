@@ -1,11 +1,10 @@
-import _ from 'lodash';
+// import _ from 'lodash';
 
-// eslint-disable-next-line import/prefer-default-export
-export function component() {
-  const element = document.createElement('div');
+// export function component() {
+//   const element = document.createElement('div');
 
-  // Lodash, now imported by this script
-  element.innerHTML = _;
+//   // Lodash, now imported by this script
+//   element.innerHTML = _;
 
-  return element;
-}
+//   return element;
+// }
