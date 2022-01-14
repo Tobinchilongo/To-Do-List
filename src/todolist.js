@@ -1,3 +1,4 @@
+/* eslint-disable camelcase */
 export default class TodoList {
 a
 
@@ -14,6 +15,7 @@ displayTasks() {
   this.sortAndSave();
   const check = 'fa-check';
   const uncheck = 'fa-square-o';
+  // eslint-disable-next-line camelcase
   const line_through = 'linethrough';
   const taskSection = document.querySelector('.task-list');
   taskSection.innerHTML = '';
@@ -29,6 +31,7 @@ displayTasks() {
           <i class="fa fa-trash-o delete-task" job="delete"  data="${task.index}"></i>
         </li>
         `;
+    // eslint-disable-next-line camelcase
     taskSection.innerHTML += task_temp;
   });
   this.attachEvents();
@@ -87,7 +90,6 @@ attachEvents() {
   listItems.forEach((checkbox) => {
     checkbox.addEventListener('click', (e) => {
       const taskIndex = e.target.getAttribute('data');
-      console.log(taskIndex);
       this.updateTaskStatus(taskIndex);
     });
   });
