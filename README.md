@@ -2,16 +2,33 @@
 
 # To-Do-List
 
-Additional description about the project and its features.
+This project entails Building a responsive Todo list app which allows you to add and remove a task. The design was gotten from minimalist.
+# WORK FLOW SCREEN
+## SCREEN SHOT
+
+![screenshot] (./image/Todolist.png)
+
+## Build With
+### Major Languages
+- HTML
+- CSS
+- Javascript
+- Webpack
+
+### Technologies Used
+- Github
+- Git
+- Visual Studio Code
 
 ## Getting Started
 
-after cloneing
-
-```
-npm install
-npm start
-```
+*Instructions on how to access my project locally.**
+To Access my project locally please follow the following instructions;
+1. Enter this url: https://github.com/Tobinchilongo/To-Do-List in you browser.
+2. Once opened navigate to the top left level of the project, a green code download button will be visible on the right hand side.
+3. Select download Zip option from the drop down menu.
+4. Once the download is complete, you will be able to access my project locally.
+Here is my Repositiry link: https://github.com/Tobinchilongo/To-Do-List
 
 ## Authors
 
@@ -24,9 +41,6 @@ npm start
 ## 🤝 Contributing
 
 Contributions, issues, and feature requests are welcome!
-
-Feel free to check the [issues page](../../issues/).
-
 ## Show your support
 
 Give a ⭐️ if you like this project!
