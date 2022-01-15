@@ -14,13 +14,13 @@ displayTasks() {
   this.sortAndSave();
   const check = 'fa-check';
   const uncheck = 'fa-square-o';
-  const line_through = 'linethrough';
+  const lineThrough = 'linethrough';
   const taskSection = document.querySelector('.task-list');
   taskSection.innerHTML = '';
   this.tasks.forEach((task) => {
     const Done = task.completed ? check : uncheck;
-    const Line = task.completed ? line_through : '';
-    const task_temp = `
+    const Line = task.completed ? lineThrough : '';
+    const taskTemp = `
         <li class="item d-flex">
           <div class="task d-flex">
             <i class="fa ${Done} update-status" job="complete" data="${task.index}"></i>
@@ -29,7 +29,7 @@ displayTasks() {
           <i class="fa fa-trash-o delete-task" job="delete"  data="${task.index}"></i>
         </li>
         `;
-    taskSection.innerHTML += task_temp;
+    taskSection.innerHTML += taskTemp;
   });
   this.attachEvents();
 }

@@ -27,6 +27,7 @@
     "ajv-keywords": "^3.5.2",
     "browserslist": "^4.17.5",
     "buffer-from": "^1.1.2",
+    "camelcase": "^6.3.0",
     "caniuse-lite": "^1.0.30001271",
     "chrome-trace-event": "^1.0.3",
     "clone-deep": "^4.0.1",
