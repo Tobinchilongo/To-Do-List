@@ -1,4 +1,3 @@
-/* eslint-disable camelcase */
 export default class TodoList {
 a
 
@@ -83,7 +82,6 @@ clearCompleted() {
 }
 
 attachEvents() {
-  // status update
   const listItems = document.querySelectorAll('.update-status');
   listItems.forEach((checkbox) => {
     checkbox.addEventListener('click', (e) => {
@@ -92,7 +90,6 @@ attachEvents() {
     });
   });
 
-  // delete tasks
   const activity = document.querySelectorAll('.delete-task');
   activity.forEach((deleteIcon) => {
     deleteIcon.addEventListener('click', (e) => {
@@ -101,7 +98,6 @@ attachEvents() {
     });
   });
 
-  // edit tasks
   const binIcons = document.querySelectorAll('.ptag');
   binIcons.forEach((deleteIcon) => {
     deleteIcon.addEventListener('input', (e) => {
