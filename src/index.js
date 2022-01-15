@@ -1,5 +1,4 @@
 import './style.css';
-// eslint-disable-next-line import/extensions
 import TodoList from './todolist.js';
 
 const todoList = new TodoList();
