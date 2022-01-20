@@ -557,9 +557,7 @@ editTask(newValue, index) {
 }
 
 clearCompleted() {
-  console.log('working')
-  let arr = JSON.parse(localStorage.getItem('tasks'))
-  const pendingTasks = arr.filter((task) => task.completed === false);
+  const pendingTasks = this.tasks.filter((task) => task.completed === false);
   this.tasks = pendingTasks;
   this.sortAndSave();
   this.displayTasks();
@@ -570,7 +568,6 @@ attachEvents() {
   listItems.forEach((checkbox) => {
     checkbox.addEventListener('click', (e) => {
       const taskIndex = e.target.getAttribute('data');
-      console.log(taskIndex);
       this.updateTaskStatus(taskIndex);
     });
   });
@@ -672,10 +669,12 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-
 const todoList = new _todolist_js__WEBPACK_IMPORTED_MODULE_1__["default"]();
 todoList.displayTasks();
-
+const clearBtn = document.getElementById('clear-completed');
+clearBtn.addEventListener('click', () => {
+  todoList.clearCompleted();
+});
 const form = document.querySelector('form');
 form.addEventListener('submit', (e) => {
   e.preventDefault();
